@@ -1,6 +1,6 @@
-FROM ubuntu:precise
+FROM php:5.6-apache
 MAINTAINER Devdatta Kulkarni <devdatta.kulkarni@rackspace.com>
 
-RUN apt-get -yqq update
-RUN apt-get -yqq install php5
+#set up mod rewrite for apache
+RUN a2enmod rewrite
 
